@@ -149,7 +149,7 @@
 
 /* buffer size to use for file I/O operations */
 #ifndef SCR_FILE_BUF_SIZE
-#define SCR_FILE_BUF_SIZE (1024*1024)
+#define SCR_FILE_BUF_SIZE (1024*1024*64)
 #endif
 
 /* whether file metadata should also be copied */
@@ -229,7 +229,7 @@
 
 /* aggregrate bandwidth limit to impose during asynchronous flushes */
 #ifndef SCR_FLUSH_ASYNC_BW
-#define SCR_FLUSH_ASYNC_BW (200*1024*1024)
+#define SCR_FLUSH_ASYNC_BW (512*1024*1024)
 #endif
 
 /* maximum percent cpu time allowed during asynchronous flushes (does not yet work well) */
